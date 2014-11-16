@@ -4,7 +4,7 @@
   {% include link-li.md label='skills' links=include.resource.links.skills %}
   {% include link-li.md label='contact' links=include.resource.links.contact %}
   {% include link-li.md label='projects' links=include.resource.links.projects disabled=true %}
-  {% include link-li.md label='languages' links=include.resource.links.languages disabled=true %}
+  {% include link-li.md label='languages' links=include.resource.links.languages %}
   {% include link-li.md label='db' links=include.resource.links.db disabled=true %}
   {% include link-li.md label='os' links=include.resource.links.os disabled=true %}
 </ul>
