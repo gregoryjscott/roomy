@@ -1,15 +1,15 @@
 defaults:
   - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "resource"
+
+  - scope:
       path: "db"
       type: "pages"
     values:
       layout: "db"
-
-  - scope:
-      path: "languages"
-      type: "pages"
-    values:
-      layout: "language"
 
   - scope:
       path: "os"
