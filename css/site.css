@@ -4,7 +4,9 @@ body {
   font-weight: 300;
   line-height: 2;
   text-align: center;
-  margin: 1em 1em 2em 1em;
+  padding: 1em 1em 2em 1em;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 p {
@@ -35,9 +37,4 @@ header {
 header h1 {
   font-size: 2.8em;
   margin: 1.8em 0 1.2em 0;
-}
-
-header, section {
-  margin: 0 auto;
-  max-width: 800px;
 }
