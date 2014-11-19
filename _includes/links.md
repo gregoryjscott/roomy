@@ -6,6 +6,6 @@
   {% include link-li.md label='projects' links=include.resource.links.projects disabled=true %}
   {% include link-li.md label='languages' links=include.resource.links.languages disabled=true %}
   {% include link-li.md label='db' links=include.resource.links.db %}
-  {% include link-li.md label='os' links=include.resource.links.os disabled=true %}
+  {% include link-li.md label='os' links=include.resource.links.os %}
 </ul>
 {% endif %}
