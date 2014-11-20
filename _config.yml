@@ -9,7 +9,7 @@ defaults:
       path: "languages"
       type: "pages"
     values:
-      layout: "languages"
+      layout: "language"
 
   - scope:
       path: "os"
