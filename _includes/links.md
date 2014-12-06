@@ -1,11 +1,11 @@
-{% if include.resource.links %}
+{% if include.data._links %}
 <ul>
-  {% include link-li.md label='work' links=include.resource.links.work %}
-  {% include link-li.md label='skills' links=include.resource.links.skills %}
-  {% include link-li.md label='contact' links=include.resource.links.contact %}
-  {% include link-li.md label='projects' links=include.resource.links.projects %}
-  {% include link-li.md label='languages' links=include.resource.links.languages %}
-  {% include link-li.md label='db' links=include.resource.links.db %}
-  {% include link-li.md label='os' links=include.resource.links.os %}
+  {% include link-li.md label='work' links=include.data._links.work %}
+  {% include link-li.md label='skills' links=include.data._links.skills %}
+  {% include link-li.md label='contact' links=include.data._links.contact %}
+  {% include link-li.md label='projects' links=include.data._links.projects %}
+  {% include link-li.md label='languages' links=include.data._links.languages %}
+  {% include link-li.md label='db' links=include.data._links.db %}
+  {% include link-li.md label='os' links=include.data._links.os %}
 </ul>
 {% endif %}
