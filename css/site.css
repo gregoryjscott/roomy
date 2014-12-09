@@ -42,3 +42,34 @@ header h1 {
 article {
   text-align: left;
 }
+
+a.button {
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  border-radius: 5px;
+  color: grey;
+  width: 400px;
+  padding: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: white;
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+a.button:hover {
+  color: white;
+  background-color: grey;
+}
+
+a.button.recommend {
+  border-color: green;
+  color: green;
+}
+
+a.button.recommend:hover {
+  color: white;
+  background-color: green;
+}

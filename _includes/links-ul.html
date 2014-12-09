@@ -1,7 +1,11 @@
 {% if include.data._links %}
   {% if include.data._links.recommend %}
     {% assign link = include.data._links.recommend %}
-    <a href="{{ link.href }}">{{ link.title }}</a>
+    <a class="button" href="{{ link.href }}">{{ link.title }}</a>
+  {% endif %}
+  {% if include.data._links.email %}
+    {% assign link = include.data._links.email %}
+    <a class="button" href="{{ link.href }}">{{ link.title }}</a>
   {% endif %}
   <ul>
     {% include link-li.html label='work' links=include.data._links.work %}
