@@ -7,6 +7,7 @@ body {
   padding: 1em 1em 2em 1em;
   margin: 0 auto;
   max-width: 800px;
+  color: #333333;
 }
 
 p {
@@ -46,22 +47,22 @@ article {
 a.button {
   border-style: solid;
   border-width: 2px;
-  border-color: grey;
+  border-color: #555555;
   border-radius: 5px;
-  color: grey;
-  width: 400px;
+  color: #555555;
+  width: 300px;
   padding: 20px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   background-color: white;
   display: inline-block;
-  margin-bottom: 2em;
+  margin: 1em 100px;
 }
 
 a.button:hover {
   color: white;
-  background-color: grey;
+  background-color: #555555;
 }
 
 a.button.recommend {
