@@ -44,6 +44,17 @@ header h1 {
   margin: 1.8em 0 1.2em 0;
 }
 
+nav {
+  color: #b3b3b3;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav a:visited {
+  color: #b3b3b3;
+}
+
 article {
   text-align: left;
 }
