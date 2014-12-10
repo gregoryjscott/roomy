@@ -1,8 +1,4 @@
 {% if include.data._links %}
-  {% if include.data._links.recommend %}
-    {% assign link = include.data._links.recommend %}
-    <a class="button" href="{{ link.href }}">{{ link.title }}</a>
-  {% endif %}
   {% include links-stack-item.html title="Work" links=include.data._links.work %}
   {% include links-stack-item.html title="Skills" links=include.data._links.skills %}
   {% include links-stack-item.html title="Contact" links=include.data._links.contact %}
