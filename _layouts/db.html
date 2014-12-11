@@ -12,32 +12,27 @@ layout: default
 
 <p>{{ page.desc }}</p>
 
-<section markdown="1">
-  {% include links-ul.html data=page %}
-</section>
-
 {% if page._embedded.projects %}
-<section>
-  {% for item in page._embedded.projects %}
-    <h1>{{ item.title }}</h1>
+  <h1>Projects</h1>
+  <section>
+    {% for item in page._embedded.projects %}
+      <h2>{{ item.title }}</h2>
 
-    <p>
-      <em>
-        {{ item.role }},
-        {{ item.begin_year }}
-        {% unless item.begin_year == item.end_year %} -
-          {% if item.end_year %}
-            {{ item.end_year }}
-          {% else %}
-            present
-          {% endif %}
-        {% endunless %}
-      </em>
-    </p>
+      <p>
+        <em>
+          {{ item.role }},
+          {{ item.begin_year }}
+          {% unless item.begin_year == item.end_year %} -
+            {% if item.end_year %}
+              {{ item.end_year }}
+            {% else %}
+              present
+            {% endif %}
+          {% endunless %}
+        </em>
+      </p>
 
-    <p>{{ item.desc }}</p>
-
-    {% include links-ul.html data=item %}
-  {% endfor %}
-</section>
+      {% include links-ul.html data=item %}
+    {% endfor %}
+  </section>
 {% endif %}
