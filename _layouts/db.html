@@ -13,5 +13,19 @@ layout: default
 <p>{{ page.desc }}</p>
 
 <section markdown="1">
-{% include links-stack.html data=page %}
+  {% include links-ul.html data=page %}
 </section>
+
+{% if page._embedded.projects %}
+<section>
+  {% for item in page._embedded.projects %}
+    <h1>{{ item.title }}</h1>
+
+    <p><em>{{ item.subtitle }}</em></p>
+
+    <p>{{ item.desc }}</p>
+
+    {% include links-ul.html data=item %}
+  {% endfor %}
+</section>
+{% endif %}
