@@ -59,6 +59,15 @@ article {
   text-align: left;
 }
 
+article ul {
+  list-style-type: circle;
+  margin: 1em;
+}
+
+article il {
+  margin: 1em;
+}
+
 a.button {
   border-style: solid;
   border-width: 2px;
