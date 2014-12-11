@@ -10,17 +10,8 @@ layout: default
   <h1>{{ page.title }}</h1>
 </header>
 
-<p>{{ page.desc }}</p>
+<p><em>{{ page.subtitle }}</em></p>
 
-{% if page._embedded.languages %}
-  <h1>Languages</h1>
-  <section>
-    {% for item in page._embedded.languages %}
-      <h2>{{ item.title }}</h2>
-
-      <p>{{ item.desc }}</p>
-
-      {% include links-ul.html data=item %}
-    {% endfor %}
-  </section>
-{% endif %}
+<section markdown="1">
+{% include links-stack.html data=page %}
+</section>
