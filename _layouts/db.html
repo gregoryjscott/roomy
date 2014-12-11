@@ -21,7 +21,19 @@ layout: default
   {% for item in page._embedded.projects %}
     <h1>{{ item.title }}</h1>
 
-    <p><em>{{ item.subtitle }}</em></p>
+    <p>
+      <em>
+        {{ item.role }},
+        {{ item.begin_year }}
+        {% unless item.begin_year == item.end_year %} -
+          {% if item.end_year %}
+            {{ item.end_year }}
+          {% else %}
+            present
+          {% endif %}
+        {% endunless %}
+      </em>
+    </p>
 
     <p>{{ item.desc }}</p>
 
