@@ -44,6 +44,14 @@ header h1 {
   margin: 1.8em 0 1.2em 0;
 }
 
+a {
+  color: #404040;
+}
+
+a:visited {
+  color: #404040;
+}
+
 nav, resource-links {
   color: #b3b3b3;
   font-weight: bold;
@@ -51,19 +59,6 @@ nav, resource-links {
 
 nav a:visited, a.resource-links:visited {
   color: #b3b3b3;
-}
-
-article {
-  text-align: left;
-}
-
-article ul {
-  list-style-type: circle;
-  margin: 1em;
-}
-
-article il {
-  margin: 1em;
 }
 
 a.button {
@@ -96,4 +91,17 @@ a.button.recommend {
 a.button.recommend:hover {
   color: white;
   background-color: #f36557;
+}
+
+article {
+  text-align: left;
+}
+
+article ul {
+  list-style-type: circle;
+  margin: 1em;
+}
+
+article il {
+  margin: 1em;
 }
