@@ -44,14 +44,12 @@ header h1 {
   margin: 1.8em 0 1.2em 0;
 }
 
-nav {
+nav, resource-links {
   color: #b3b3b3;
-  font-size: 0.8em;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
-nav a:visited {
+nav a:visited, a.resource-links:visited {
   color: #b3b3b3;
 }
 
