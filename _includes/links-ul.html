@@ -1,12 +1,4 @@
 {% if include.data._links %}
-  {% if include.data._links.recommend %}
-    {% assign link = include.data._links.recommend %}
-    <a class="button recommend" href="{{ link.href }}">{{ link.title }}</a>
-  {% endif %}
-  {% if include.data._links.email %}
-    {% assign link = include.data._links.email %}
-    <a class="button" href="{{ link.href }}">{{ link.title }}</a>
-  {% endif %}
   <ul>
     {% include link-li.html label='work' links=include.data._links.work %}
     {% include link-li.html label='skills' links=include.data._links.skills %}
@@ -16,4 +8,14 @@
     {% include link-li.html label='db' links=include.data._links.db %}
     {% include link-li.html label='os' links=include.data._links.os %}
   </ul>
+
+  {% if include.data._links.recommend %}
+    {% assign link = include.data._links.recommend %}
+    <a class="button recommend" href="{{ link.href }}">{{ link.title }}</a>
+  {% endif %}
+
+  {% if include.data._links.email %}
+    {% assign link = include.data._links.email %}
+    <a class="button" href="{{ link.href }}">{{ link.title }}</a>
+  {% endif %}
 {% endif %}
