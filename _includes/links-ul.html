@@ -1,4 +1,5 @@
 {% if include.data._links %}
+  <p>
   <ul>
     {% include link-li.html label='work' links=include.data._links.work %}
     {% include link-li.html label='skills' links=include.data._links.skills %}
@@ -8,6 +9,7 @@
     {% include link-li.html label='db' links=include.data._links.db %}
     {% include link-li.html label='os' links=include.data._links.os %}
   </ul>
+  </p>
 
   {% if include.data._links.recommend %}
     {% assign link = include.data._links.recommend %}
