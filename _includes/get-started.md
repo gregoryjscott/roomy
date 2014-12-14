@@ -10,7 +10,7 @@ Great! This is how it works.
 </ol>
 
 <p>
-Shoot me an email and let's do it!
+Shoot me an email and let's get started!
 </p>
 </article>
 
