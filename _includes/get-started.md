@@ -15,5 +15,5 @@ Shoot me an email and let's get started!
 </article>
 
 <p>
-<a class="button recommend" href="mailto:me@gregoryjscott.com">Email me.</a>
+<a class="button recommend" href="mailto:me@gregoryjscott.com">Email me</a>
 </p>
