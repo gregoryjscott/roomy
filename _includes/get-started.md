@@ -1,7 +1,7 @@
-<h1>Ready to get to started?</h1>
+<h1>Let's get started!</h1>
 
 <article>
-Great! This is how it works.
+This is how it works.
 
 <ol>
 <li>Send me a quick email to let me know you're interested.</li>
